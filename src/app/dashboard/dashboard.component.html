@@ -1,0 +1,89 @@
+
+<!-- <app-nav></app-nav>  -->
+<app-nav></app-nav>
+<div *ngIf="visibileData" class="grid-container">
+  <mat-grid-list  cols="4" rowHeight="350px">
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <app-numbercardconsumeenergy></app-numbercardconsumeenergy>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <app-numbercardyildtoday></app-numbercardyildtoday>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <mat-icon> attach_money</mat-icon>
+        <app-numbercardsavings></app-numbercardsavings>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <app-numbercard-co2></app-numbercard-co2>
+      </mat-card>
+    </mat-grid-tile>
+
+  </mat-grid-list>
+  <mat-grid-list cols="2" rowHeight="350px">
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <app-donutchart></app-donutchart>
+      </mat-card>
+    </mat-grid-tile>
+    <!-- <mat-grid-tile [colspan]="0.5" [rowspan]="0.5">
+      <mat-card class="dashboard-card">
+        <app-numbercardconsumeenergy></app-numbercardconsumeenergy>
+    
+      </mat-card>
+
+    </mat-grid-tile> -->
+    <!-- <mat-grid-tile [colspan]="0.5" [rowspan]="0.5">
+      <mat-card class="dashboard-card">
+       <app-numbercardyildtoday></app-numbercardyildtoday>
+      </mat-card>
+    </mat-grid-tile> -->
+  
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <app-gaugechart></app-gaugechart>
+      </mat-card>
+    </mat-grid-tile>
+    
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <app-linechart></app-linechart>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <app-radarchart></app-radarchart>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <app-piechart></app-piechart>
+      </mat-card>
+    </mat-grid-tile>
+  
+    <!-- <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <app-donutchart></app-donutchart>
+      </mat-card>
+    </mat-grid-tile> -->
+    
+  
+  </mat-grid-list>
+</div> 
+
+<!-- <div class="grid-container">
+  <mat-grid-list cols="4" rowHeight="350px">
+    <mat-grid-tile [colspan]="3" [rowspan]="3">
+      <app-card title="Table">
+        <app-t></app-t>
+      </app-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div> -->

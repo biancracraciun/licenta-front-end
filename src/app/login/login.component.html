@@ -1,0 +1,22 @@
+<router-outlet></router-outlet>
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+  <mat-card class="box">
+    <mat-card-header>
+      <mat-card-title>Log in</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="input-parent">
+      <input matInput placeholder="Username" [(ngModel)]="username" required>
+      </div>
+      <br>
+      <div class="input-parent">
+        <input type="password" placeholder="Password" [(ngModel)]="password" name="password" required>
+      </div>
+      </mat-card-content>
+      <br>
+      <br>
+      <br>
+    <button mat-stroked-button class="btn-block" (click)="loginclick()">Log in</button>
+    <a  routerLink="register">Register</a>
+  </mat-card>
+</div>

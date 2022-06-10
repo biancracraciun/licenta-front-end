@@ -1,0 +1,17 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <mat-card class="box">
+      <mat-card-header>
+        <mat-card-title>Register</mat-card-title>
+      </mat-card-header>
+    
+        <mat-card-content>
+         
+            <input matInput placeholder="Last Name" [(ngModel)]="lastName">
+            <input matInput placeholder="First Name" [(ngModel)]="firstName">
+            <input matInput placeholder="Username" [(ngModel)]="username">
+            <input matInput placeholder="Password" [(ngModel)]="password">
+        </mat-card-content>
+        <button mat-stroked-button color="accent" class="btn-block" (click)="registerclick()">Register</button>
+    {{ message }}
+    </mat-card>
+  </div>
